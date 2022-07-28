@@ -1,5 +1,33 @@
 .masthead {
     display: grid;
     grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "menu-and-search . action-buttons"
+    ". technologies ."
+    "date logo todays-paper"
 }
 
+.masthead_menu-and-search {
+    grid-area: menu-and-search;
+}
+
+.masthead_actions {
+    grid-area: action-buttons;
+}
+
+.masthead_technologies {
+    grid-area: technologies;
+}
+
+.masthead_date {
+    grid-area: date;
+}
+
+.masthead_logo {
+    grid-area: logo;
+}
+
+.masthead_paper {
+    grid-area: todays-paper;
+}
